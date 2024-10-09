@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSE&YULI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<audio controls autoplay muted>
+  <source src="music/audio2.ogg" type="audio/ogg">
+  
+
+</audio>
+    <br>
+
+    <div class="titulo">
+
+            <br>
+            <h1>Jose</h1>
+            <br>
+            <br>
+            <h1>&</h1>
+            <br>
+            <br>
+            <h1>Yulieth</h1>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <H6>NOS CASAMOS</H6>
+            <h1>
+    
+            </h1>
+            <h1>
+    
+            </h1>
+   
+        
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="tarjetas">
+        <section>
+        <img src="images/imagen1.jpg" alt="imagen1">
+        <img src="images/imagen2.jpg" alt="imagen2">
+        <img src="images/imagen3.jpg" alt="imagen3">
+        <img src="images/imagen4.jpg" alt="imagen4">
+
+    </section>
+</div>
+<br>
+<div class="calendar">
+    <h2>Save The Date</h2>
+    <h4>27 Diciembre 2024</h4>
+</div>
+    <div class="contador">
+        <div class="contenedor"> 
+            <div class="contenido">
+              <div class="contador">
+                <div class="responsivo1">
+                  <div class="cartel">
+                  <div id="dias"></div>
+                  <div class="h3"><h3>Días</h3></div>
+                </div>
+                  <div class="cartel">
+                  <div id="horas"></div>
+                  <div class="h3"><h3>Horas</h3></div>
+                </div>
+                </div>
+                <div class="responsivo2">
+                <div class="cartel">
+                  <div id="minutos"></div>
+                  <div class="h3"><h3>Minutos</h3></div>
+                </div>
+                <div class="cartel">
+                  <div id="segundos"></div>
+                  <div class="h3"><h3>Segundos</h3></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+<div class="recepcion">
+<h1>Consejos y Recepción</h1>
+<h4>Parqueadero de la 11</h4>
+
+
+<a class="boton" href="https://maps.app.goo.gl/uatejyFCHorQjJhm9" target="_blank">Como Llegar</a>
+</div>
+
+
+    <script>
+        const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('12 27, 2024 16:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('dias').innerText = Math.floor(distance / (day)),
+        document.getElementById('horas').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutos').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('segundos').innerText = Math.floor((distance % (minute)) / second);
+
+    }, second)
+    </script>
+    
+</body>
+</html>
