@@ -88,7 +88,7 @@ window.addEventListener("load", ()=> {
 
     aceptar.onclick = ()=> {
         const name = nombre.value;
-        if (nombre != "") {
+        if (name != "") {
             a.href = "https://wa.me/573015614262/?text=Hola, muchas gracias por la invitacion, yo, "+name+", confirmo mi asistencia."
             a.click();
         }
