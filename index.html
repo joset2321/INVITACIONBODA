@@ -1,128 +1,118 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JOSE&YULI</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Jose & Yulieth</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<audio controls autoplay muted>
-  <source src="music/audio2.ogg" type="audio/ogg">
-  
+    <audio id="audio" loop>
+        <source src="music/audio2.ogg"  type="audio/ogg">
+    </audio>
 
-</audio>
-    <br>
-
-    <div class="titulo">
-
-            <br>
-            <h1>Jose</h1>
-            <br>
-            <br>
-            <h1>&</h1>
-            <br>
-            <br>
-            <h1>Yulieth</h1>
-            <br>
-            <br>
-            
-            <br>
-            <br>
-            <H6>NOS CASAMOS</H6>
-            <h1>
     
-            </h1>
-            <h1>
     
-            </h1>
-   
-        
-    </div>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="tarjetas">
-        <section>
-        <img src="images/imagen1.jpg" alt="imagen1">
-        <img src="images/imagen2.jpg" alt="imagen2">
-        <img src="images/imagen3.jpg" alt="imagen3">
-        <img src="images/imagen4.jpg" alt="imagen4">
+    <main>
+        <div class="gridos">
+            <i id="playAudio" class="icon-pause"></i>
+            <span>
+                Pausa o reanuda el audio
+            </span>
+        </div>
 
-    </section>
-</div>
-<br>
-<div class="calendar">
-    <h2>Save The Date</h2>
-    <h4>27 Diciembre 2024</h4>
-</div>
-    <div class="contador">
-        <div class="contenedor"> 
-            <div class="contenido">
-              <div class="contador">
-                <div class="responsivo1">
-                  <div class="cartel">
-                  <div id="dias"></div>
-                  <div class="h3"><h3>Días</h3></div>
+        <h1 class="titulo">
+            Jose <br>
+            & <br>
+            Yulieth <br> <br>
+            NOS CASAMOS
+        </h1>
+        <br>
+        <br>
+
+        <div class="carrusel">
+            <img src="resourse/resourse.png" class="corazon" alt="">
+            <div class="ruleta">
+                <div id="ruleta">
+                    <img src="images/imagen1.jpg" alt="">
+                    <img src="images/imagen2.jpg" alt="">
+                    <img src="images/imagen3.jpg" alt="">
+                    <img src="images/imagen4.jpg" alt="">
+                    <img src="images/imagen5.jpg" alt="">
+                    <img src="images/imagen6.jpg" alt="">
+                    <img src="images/imagen7.jpg" alt="">
+                    <img src="images/imagen8.jpg" alt="">
+                    <img src="images/imagen9.jpg" alt="">
+                    <img src="images/imagen10.jpg" alt="">
+                    <img src="images/imagen11.jpg" alt="">
+                    <img src="images/imagen12.jpg" alt="">
+                    <img src="images/imagen13.jpg" alt="">
+                    <img src="images/imagen14.jpg" alt="">
+                    <img src="images/imagen15.jpg" alt="">
                 </div>
-                  <div class="cartel">
-                  <div id="horas"></div>
-                  <div class="h3"><h3>Horas</h3></div>
-                </div>
-                </div>
-                <div class="responsivo2">
-                <div class="cartel">
-                  <div id="minutos"></div>
-                  <div class="h3"><h3>Minutos</h3></div>
-                </div>
-                <div class="cartel">
-                  <div id="segundos"></div>
-                  <div class="h3"><h3>Segundos</h3></div>
-                </div>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
+        <br> <br>
+        <div class="calendar">
+            <h2>Save The Date</h2>
+            <h4>27 Diciembre 2024</h4>
+        </div>
+        <div class="date">
+            <div>
+                <span>Dias</span>
+                <nav id="days"></nav>
+            </div>
+            <div>
+                <span>Horas</span>
+
+                <nav id="hours"></nav>
+
+            </div>
+            <div>
+                <span>Minutos</span>
+
+                <nav id="minutes"></nav>
+
+            </div>
+            <div>
+                <span>Segundos</span>
+                <nav id="secconds"></nav>
+            </div>
+        </div>
+        <br> 
+        <br>
+        <br> 
+        <br>
+        <div class="recepcion">
+            <h1>Consejos y Recepción</h1>
+            <h4>Parqueadero de la 11</h4>
+            ¿No sabes como llegar? 
+            <a class="boton" href="https://maps.app.goo.gl/uatejyFCHorQjJhm9" target="_blank">Presiona aqu&iacute;</a>
+        </div>
+
+        <br> <br>
+
+        <br> <br>
+
+        <button id="confirm">
+            Confirma tu asistencia
+        </button>
+
+        <a href="wa.link/okz738" id="a"></a>
+
+    </main>
+    <div class="overlord" id="overlord">
+        <div class="body">
+            <h3>
+                ¿Quien confirma la asistencia?
+            </h3>
+            <input type="text" id="nombre">
+            <button id="aceptar">
+                Aceptar y enviar
+            </button>
+        </div>
     </div>
-
-<div class="recepcion">
-<h1>Consejos y Recepción</h1>
-<h4>Parqueadero de la 11</h4>
-
-
-<a class="boton" href="https://maps.app.goo.gl/uatejyFCHorQjJhm9" target="_blank">Como Llegar</a>
-</div>
-
-
-    <script>
-        const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
-
-let countDown = new Date('12 27, 2024 16:00:00').getTime(),
-    x = setInterval(function() {
-
-      let now = new Date().getTime(),
-          distance = countDown - now;
-
-      document.getElementById('dias').innerText = Math.floor(distance / (day)),
-        document.getElementById('horas').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutos').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('segundos').innerText = Math.floor((distance % (minute)) / second);
-
-    }, second)
-    </script>
-    
 </body>
+<script src="code/code.js"></script>
+
 </html>

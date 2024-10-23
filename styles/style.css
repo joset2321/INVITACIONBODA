@@ -1,0 +1,230 @@
+@font-face {
+    font-family: coquette;
+    src: url("../resourse/Courgette-Regular.ttf");
+}
+
+
+* {
+    margin: 0;
+    font-family: coquette;
+    color: #2E7006;
+
+}
+/* Estilos para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de scroll */
+}
+
+::-webkit-scrollbar-track {
+    background: #f7efe4; /* Color del fondo de la barra */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5baeb; /* Color del "thumb" (la parte que se mueve) */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #f7efe4; /* Bordes alrededor del "thumb" para darle un aspecto más minimalista */
+}
+
+/* Para navegadores Firefox */
+* {
+    scrollbar-width: thin; /* Estilo del grosor: thin, auto o none */
+    scrollbar-color: #f5baeb #f7efe4; /* Color del "thumb" y del fondo */
+}
+
+
+body {
+    background: #F7EFE4;
+    height: 100vh;
+    background-image: url("../images/image.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    line-height: 30px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+main {
+    z-index: 30;
+    width: 80vw;
+    height: 90vh;
+    overflow-y: scroll;
+    background: radial-gradient(#f7efe4, #f5baeb4f);
+    box-shadow: 0px 0px 5px 0px #f5baeb;
+    position: relative;
+}
+
+.contenido {
+    min-height: calc(100vh - 45vh);
+}
+
+.carrusel {
+    text-align: center;
+}
+
+
+.carrusel img.corazon {
+    height: 300px;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 5px gold);
+}
+
+.carrusel .ruleta img {
+    height: 150px;
+    filter: opacity(0.8);
+    margin-left: 10px;
+    transition: all 1s;
+}
+
+.carrusel .ruleta img:hover {
+    height: 250px;
+    filter: opacity(1);
+    transition: all 1s;
+}
+
+
+.carrusel .ruleta {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin-top: -230px;
+    position: absolute;
+}
+
+.ruleta div {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.date {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.date nav {
+    width: 94px;
+    height: 94px;
+    border: solid 3px gold;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+}
+
+.recepcion {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f7efe4e1;
+    border-radius: 10px;
+    border: solid 1px gold;
+    max-width: 300px;
+    
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: #479119;
+    color: #f5baeb;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: #54a821;
+    transition: all .3s;
+}
+
+.icon-play, .icon-pause {
+    display: block;
+    background-image: url("../resourse/play.webp");
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    filter: invert(1) sepia(80) saturate(2.5) drop-shadow(2px 4px 6px pink);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+.icon-pause {
+    background-image: url("../resourse/pausa.png");
+    
+}
+
+.gridos {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    line-height: 50px;
+    background-color: #f5baeb95;
+}
+
+.overlord {
+    background-color: rgba(0, 0, 0, 0.189);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.body {
+    background-color: #F7EFE4;
+    padding: 50px;
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.body * {
+    margin-bottom: 30px;
+}
+
+.body input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px #479119;
+    outline: none;
+}
+
+@media screen and (max-width: 500px) {
+    .date {
+        grid-template-columns: 1fr 1fr;
+        width: 250px;
+    }
+    .recepcion {
+        margin: 10px;
+    }
+}

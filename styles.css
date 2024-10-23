@@ -1,36 +1,37 @@
-
-
-
 body {
-  background-image: url(images/fondo.jpg);
+  background-image: url(bg.jpg);
 }
+
 .titulo {
-  line-height:30px;
+  line-height: 30px;
   font-style: italic;
   text-align: center;
-  font-family: "great vibes","cursive","ligh";
+  font-family: "great vibes", "cursive", "ligh";
   font-size: 60px;
-    width:600px;
-    margin:auto;
-    color:#2E7006  ;
-    
-  }
-.calendar{
+  width: 600px;
+  margin: auto;
+  color: #2E7006;
+
+}
+
+.calendar {
   text-align: center;
   font-style: italic;
-  font-family: "gupter","serif" ;
+  font-family: "gupter", "serif";
   font-size: 30px;
 }
-.recepcion{
+
+.recepcion {
   text-align: center;
-  font-family: "gupter","serif" ;
+  font-family: "gupter", "serif";
   font-size: 30px;
   font-style: italic;
 
 }
 
 .boton {
-  background-color: #4CAF50; /* Verde */
+  background-color: #4CAF50;
+  /* Verde */
   border: none;
   color: blanco;
   padding: 15px 32px;
@@ -44,17 +45,19 @@ body {
 }
 
 .boton:hover {
-  background-color: #45a049; /* Verde oscuro */
+  background-color: #45a049;
+  /* Verde oscuro */
 
 }
-section{
+
+section {
   align-content: left;
   display: flex;
   width: 880px;
   height: 430px;
 }
 
-section img{
+section img {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
@@ -71,8 +74,8 @@ section img:hover {
 }
 
 .tarjetas {
-  width:500px;
-    margin:0ch;
+  width: 500px;
+  margin: 0ch;
 
 }
 
@@ -81,10 +84,12 @@ section img:hover {
   margin: 0;
   padding: 0;
 }
+
 .contenedor {
   color: #000000;
   text-align: center;
 }
+
 .cartel {
   width: 109px;
   height: 109px;
@@ -95,31 +100,37 @@ section img:hover {
   border: 3px solid #000000;
   border-radius: 5px;
 }
-.cartel>div{
+
+.cartel>div {
   font-size: 50px;
   font-family: 'Chela One', sans serif;
   animation: fade 3s;
   line-height: 30px;
   margin-top: 5px;
 }
+
 .cartel>div>h3 {
   margin-top: 15px;
   font-size: 20px;
   font-weight: normal;
 }
+
 .h3 {
   bottom: 0;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
+
 .contenedor {
   margin-top: 3%;
 }
+
 .contenido {
   width: 80%;
   margin: 0 auto;
   border: 0px solid black;
   z-index: 10;
 }
+
 li {
   display: inline-block;
   font-size: 1.5em;
@@ -127,10 +138,12 @@ li {
   padding: 1em;
   text-transform: uppercase;
 }
+
 li span {
   display: block;
   font-size: 4.5rem;
 }
+
 .numeros {
   font-family: 'Chela one', sans-serif;
   font-size: 60px;
@@ -138,39 +151,49 @@ li span {
   animation-name: fade;
   animation-duration: 3s;
 }
+
 .responsivo1 {
   display: inline-block
 }
+
 .responsivo2 {
   display: inline-block
 }
-@media (max-width: 450px) {  
+
+@media (max-width: 450px) {
   .contenedor {
     margin-top: 15%;
   }
+
   .banner {
-   margin-bottom: 30px; 
+    margin-bottom: 30px;
   }
+
   .cartel {
     height: 99px;
     width: 99px;
   }
-  .cartel>div{
+
+  .cartel>div {
     font-size: 45px;
   }
+
   .cartel>div>h3 {
     font-size: 15px;
     margin-top: 0px;
   }
 }
+
 @keyframes fade {
-    0%   {
-      opacity: 0;
+  0% {
+    opacity: 0;
   }
-    30%   {
-      opacity: 0;
-  }  
-    100% {
-      opacity: 1;
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
