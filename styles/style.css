@@ -219,6 +219,17 @@ button:hover {
     outline: none;
 }
 
+.texto {
+    background-color: #F7EFE4;
+    padding: 20px;
+}
+
+.cita {
+    display: block;
+    float: right;
+    font-style: italic;
+}
+
 @media screen and (max-width: 500px) {
     .date {
         grid-template-columns: 1fr 1fr;
