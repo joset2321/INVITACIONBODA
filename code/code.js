@@ -88,8 +88,10 @@ window.addEventListener("load", ()=> {
 
     aceptar.onclick = ()=> {
         const name = nombre.value;
-        a.href = "https://wa.me/573015614262/?text=Hola, muchas gracias por la invitacion, yo, "+name+", confirmo mi asistencia."
-        a.click();
+        if (nombre != "") {
+            a.href = "https://wa.me/573015614262/?text=Hola, muchas gracias por la invitacion, yo, "+name+", confirmo mi asistencia."
+            a.click();
+        }
         overlord.style.display = "none";
     }
 
