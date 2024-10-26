@@ -272,6 +272,10 @@ button:hover {
         height: auto;
     }
 
+    .texto {
+        height: auto;
+    }
+
     .deslizar {
         width: 80%;
         line-height: 30vh;
