@@ -11,11 +11,16 @@ window.addEventListener("load", ()=> {
     const overlord = document.getElementById("overlord");
     const nombre = document.getElementById("nombre");
     const aceptar = document.getElementById("aceptar");
+    const main = document.querySelector("main");
+    const tapa = document.getElementById("tapa");
+    const deslizar = document.getElementById("deslizar");
+    const open = document.getElementById("open");
     const theDay = new Date('12 27, 2024 16:00:00').getTime();
     const segundo = 1000;
     const minuto = segundo * 60;
     const hora = minuto * 60;
     const dia = hora * 24;
+    
 
     /**
      * @type {HTMLImageElement[]}
@@ -27,6 +32,7 @@ window.addEventListener("load", ()=> {
     let isScrolleable = true;
     let now = new Date().getTime();
     let play = false;
+    let scroll = false;
     
     setInterval(() => {
         if (isScrolleable) {
@@ -51,34 +57,52 @@ window.addEventListener("load", ()=> {
         secconds.innerText = Math.floor((distancia % minuto) / segundo)
     }, segundo);
 
+    deslizar.onclick = ()=> {
+        main.style.overflowY = "scroll";
+        let s = setInterval(() => {
+            main.scrollBy(0, 10);
+            if (scroll) {
+                clearInterval(s);
+            }
+        }, 1);
+    }
+    
 
-    audio.play();
+    main.addEventListener("scroll", ()=> {
+        if (!scroll) {
+            let y = main.scrollTop;
+            tapa.style.marginTop = y + "px";
+            if ((y * 0.03) < 100) {
+                deslizar.style.padding = (y*0.03) + "px"
+                deslizar.style.filter = "opacity("+(1 - (y*0.03) / 100)+")"
+            }
+            if (y >= window.innerHeight*5) {
+                open.remove();
+                main.scrollTo(0, 0);
+                audio.play();
+                scroll = true;
+            }
+        }
+    })
+
 
     audio.onplay = ()=> {
         play = true;
+        playAudio.classList.remove("icon-play");
+        playAudio.classList.add("icon-pause");
     }
 
     audio.onpause = ()=> {
         play = false;
-    }
-
-    audio.onload = ()=> {
-        if (!play) {
-            audio.play();
-        }
+        playAudio.classList.add("icon-play");
+        playAudio.classList.remove("icon-pause");
     }
 
     playAudio.onclick = ()=> {
         if (play) {
             audio.pause();
-            playAudio.classList.add("icon-play");
-            playAudio.classList.remove("icon-pause");
-            play = false;
         } else {
             audio.play();
-            playAudio.classList.remove("icon-play");
-            playAudio.classList.add("icon-pause");
-            play = true;
         }
     }
 
