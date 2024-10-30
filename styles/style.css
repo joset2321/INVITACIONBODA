@@ -7,7 +7,7 @@
 * {
     margin: 0;
     font-family: coquette;
-    color: #2E7006;
+    color: #c47996;
 
 }
 /* Estilos para navegadores Webkit (Chrome, Safari) */
@@ -16,30 +16,33 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f7efe4; /* Color del fondo de la barra */
+    background: #fff; /* Color del fondo de la barra */
     border-radius: 10px; /* Bordes redondeados */
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #f5baeb; /* Color del "thumb" (la parte que se mueve) */
     border-radius: 10px; /* Bordes redondeados */
-    border: 2px solid #f7efe4; /* Bordes alrededor del "thumb" para darle un aspecto más minimalista */
+    border: 2px solid #fff; /* Bordes alrededor del "thumb" para darle un aspecto más minimalista */
 }
 
 /* Para navegadores Firefox */
 * {
     scrollbar-width: thin; /* Estilo del grosor: thin, auto o none */
-    scrollbar-color: #f5baeb #f7efe4; /* Color del "thumb" y del fondo */
+    scrollbar-color: #f5baeb #fff; /* Color del "thumb" y del fondo */
 }
 
 
 body {
-    background: #F7EFE4;
+    background: #fff;
     height: 100vh;
-    background-image: url("../images/image.png");
+    background-image: url('../images/backUp.jpg'), url('../images/backDown.jpg');
+    background-position: top center, bottom center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .titulo {
@@ -56,7 +59,7 @@ main {
     width: 80vw;
     height: 90vh;
     overflow-y: hidden;
-    background: radial-gradient(#f7efe4, #f5baeb4f);
+    background: radial-gradient(#fff, #f5baeb4f);
     box-shadow: 0px 0px 5px 0px #f5baeb;
     position: relative;
 }
@@ -136,7 +139,7 @@ main {
 .recepcion {
     margin: 10px auto;
     padding: 20px;
-    background-color: #f7efe4e1;
+    background-color: #fff;
     border-radius: 10px;
     border: solid 1px gold;
     max-width: 300px;
@@ -147,8 +150,9 @@ button {
     display: block;
     margin: 0 auto;
     margin-bottom: 100px;
-    background-color: #479119;
-    color: #f5baeb;
+    background-color: #e0b7dc;
+    color: gold;
+    text-shadow: 1px 1px 1px rgba(28, 28, 28, 0.404);
     border: none;
     padding: 20px;
     font-size: 20px;
@@ -158,7 +162,7 @@ button {
 }
 
 button:hover {
-    background-color: #54a821;
+    background-color: #d8bdd6;
     transition: all .3s;
 }
 
@@ -200,7 +204,7 @@ button:hover {
 }
 
 .body {
-    background-color: #F7EFE4;
+    background-color: #fff;
     padding: 50px;
     width: 50%;
     height: 200px;
@@ -220,7 +224,7 @@ button:hover {
 }
 
 .texto {
-    background-color: #F7EFE4;
+    background-color: #fff;
     height: 400px;
     text-align: center;
     width: 100%;
