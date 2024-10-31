@@ -51,7 +51,19 @@ body {
     text-align: center;
     font-size: 30px;
     margin: auto;
-    margin-top: 100px;
+}
+
+.divTitulo {
+    background-image: url("../images/letras.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
 }
 
 main {
@@ -76,7 +88,7 @@ main {
 .carrusel img.corazon {
     height: 300px;
     margin: 0 auto;
-    filter: drop-shadow(0px 0px 5px gold);
+    filter: drop-shadow(0px 0px 5px #f38de2);
 }
 
 .carrusel .ruleta img {
@@ -179,8 +191,7 @@ button:hover {
 
 
 .icon-pause {
-    background-image: url("../resourse/pausa.png");
-    
+    background-image: url("../resourse/pausa.png");   
 }
 
 .gridos {
@@ -263,6 +274,22 @@ button:hover {
 
 }
 
+.doble {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.doble div {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.doble img {
+    width: 50%;
+}
+
 @media screen and (max-width: 500px) {
     .date {
         grid-template-columns: 1fr 1fr;
@@ -278,6 +305,12 @@ button:hover {
 
     .texto {
         height: auto;
+    }
+
+    .divTitulo {
+        height: 100vw;
+        width: 100%;
+        background-size: 120%;
     }
 
     .deslizar {
